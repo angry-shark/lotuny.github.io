@@ -1,654 +1,316 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!DOCTYPE HTML>
+<html>
+
 <head><meta name="generator" content="Hexo 3.8.0">
-
-    <!--[if lt IE 9]>
-        <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
-    <![endif]-->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no">
-<meta name="author" content="Lotuny">
-
-
+	<link rel="bookmark" type="image/x-icon" href="/img/logo.png">
+	<link rel="shortcut icon" href="/img/logo.png">
+	
+			    <title>
+    Lotuny's Blog
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
     
-    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
 
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lotuny&#39;s Blog">
-<meta property="og:url" content="http://lotuny.github.io/index.html">
-<meta property="og:site_name" content="Lotuny&#39;s Blog">
-<meta property="og:locale" content="zh-CN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lotuny&#39;s Blog">
-
-<link rel="apple-touch-icon" href="https://lotuny.github.io/apple-touch-icon.png">
-
-
-    <link rel="alternate" href="/atom.xml" title="Lotuny&#39;s Blog" type="application/atom+xml">
-
-
-
-    <link rel="shortcut icon" href="https://lotuny.github.io/favicon.png">
-
-
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
-
-
-
-    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
-
-
-
-    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <style> .article { opacity: 0;} </style>
-
-
-<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-
-<title>Lotuny&#39;s Blog</title>
-
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-<script>
-    var yiliaConfig = {
-        fancybox: true,
-        animate: true,
-        isHome: true,
-        isPost: false,
-        isArchive: false,
-        isTag: false,
-        isCategory: false,
-        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
-        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: 
-    }
-</script>
-
-
-    <script> yiliaConfig.jquery_ui = [false]; </script>
-
-
-
-    <script> yiliaConfig.rootUrl = https://lotuny.github.io; </script>
-
-
-
-
-
-
-</head></html>
-<body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            <img src="https://lotuny.github.io/img/avatar.jpg" class="animated zoomIn">
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">Lotuny</a></h1>
-        </hgroup>
-
-        
-
-        
-
-
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
-
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="https://lotuny.github.io/">主页</a></li>
-                        
-                            <li><a href="https://lotuny.github.io/archives/">所有文章</a></li>
-                        
-                            <li><a href="https://lotuny.github.io/tags/">标签云</a></li>
-                        
-                            <li><a href="https://lotuny.github.io/about/">关于我</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa GitHub" href="https://github.com/lotuny" title="GitHub"></a>
-                            
-                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/待分类/">待分类</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程语言（programming-language）/">编程语言（programming language）</a></li></ul>
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
-                    
-                    </div>
-                </section>
-                
-
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">专注于前端</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>                
-</div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Lotuny</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                <img src="https://lotuny.github.io/img/avatar.jpg" class="animated zoomIn">
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">Lotuny</a></h1>
-            </hgroup>
-            
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/">主页</a></li>
-                
-                    <li><a href="/archives/">所有文章</a></li>
-                
-                    <li><a href="/tags/">标签云</a></li>
-                
-                    <li><a href="/about/">关于我</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa GitHub" target="_blank" href="https://github.com/lotuny" title="GitHub"></a>
-                            
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
-            </nav>
-        </header>                
-    </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
-</nav>
-      <div class="body-wrap">
+			    
   
-    <article id="post-ctf-learning" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/11/08/ctf-learning/" class="article-date">
-      <time datetime="2018-11-07T17:32:16.015Z" itemprop="datePublished">2018-11-08</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/08/ctf-learning/">ctf学习</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="签到题"><a href="#签到题" class="headerlink" title="签到题"></a>签到题</h2><p>反正就是各种查看源码，看跳转的源码，flag一般在注释里。</p>
-<h2 id="文件上传题"><a href="#文件上传题" class="headerlink" title="文件上传题"></a>文件上传题</h2><p>这个嘛……有时候能做出来，有时候就……我觉得很灵异。先随手写些想到的东西：</p>
-<ul>
-<li>0x00截断<br> 据说是服务器读取URL的时候只读到十六进制0x00的地方，所以通过抓包修改上传文件名称就可以绕过检查，为什么要抓包修改呢，我理解的是0x00并不能直接用键盘打出来。比如只允许上传图片格式，但是我们渗透要获得webshell肯定要上传脚本文件，所以example.php就上传不了，我们抓包改名为example.php(0x00).jpg前端的检查就能通过，到后端就会变成example.php了，然后输入URL访问上传的php脚本就可以运行了。但我貌似没分清客户端和服务器端，还有前后端？再说吧……</li>
-<li>压缩包上传<br> 还没学会，上传了却不会解压……</li>
-</ul>
-<h2 id="md5碰撞"><a href="#md5碰撞" class="headerlink" title="md5碰撞"></a>md5碰撞</h2><p>md5好像是一种哈希加密算法？没有仔细去了解，反正就是讲道理只能从明文得到密文，并且是一对一的关系，Umm……密码学的知识都忘光光了。反正就是说现在md5不安全了，不同的明文有可能加密成同样的密文。贴一下别人关于md5碰撞例子的文章哈哈哈<a href="https://www.jianshu.com/p/c9089fd5b1ba" target="_blank" rel="noopener">https://www.jianshu.com/p/c9089fd5b1ba</a></p>
-<h2 id="php弱类型比较"><a href="#php弱类型比较" class="headerlink" title="php弱类型比较"></a>php弱类型比较</h2><p>讲真，我还蛮讨厌各种脚本的，从JavaScript开始，我也母鸡是为什么呀。反正就是JavaScript也有弱类型，但我在学php的时候才知道这个概念（反手给自己一巴掌）。两个等号==是弱类型，三个===是强类型，反正就是强类型更安全，暂时不知道弱类型有什么用，应该是有什么妙用才留着的。</p>
-<ul>
-<li>字符串（str）– 整型（int）：字符串取开头数字和整型比较，如果开头为字母那么值为0。e.g. “324kjhuh3423sfd”==324; “sfew324fdf3”==0.</li>
-<li>布尔值（boolean）：true和任何其它类型比较结果都为真，因为不知道是在哪匆匆一瞥的结果，所以有待考究……</li>
-<li>数组（Array）：我还没搞懂？？？</li>
-</ul>
-<h2 id="sql注入"><a href="#sql注入" class="headerlink" title="sql注入"></a>sql注入</h2><p>这个感觉很难，只理解了最简单的一小部分。</p>
-<ul>
-<li>每次输入这个（1’ or ‘’=’ ）都没反应，感觉自己像智障……</li>
-<li><code>/*!*/</code>注释符内的命令会被mysql执行,比如<code>/*!union*/</code></li>
-</ul>
-<h2 id="python脚本编写"><a href="#python脚本编写" class="headerlink" title="python脚本编写"></a>python脚本编写</h2><p>也是只学了鸡毛蒜皮，讲道理应该专门给它开个页面。编程语言学多了我真的会乱的啊啊啊！</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/待分类/">待分类</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-git-learning" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/11/08/git-learning/" class="article-date">
-      <time datetime="2018-11-07T17:32:12.838Z" itemprop="datePublished">2018-11-08</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/08/git-learning/">git常用命令</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="本地创建版本库-Create-a-Repository"><a href="#本地创建版本库-Create-a-Repository" class="headerlink" title="本地创建版本库 Create a Repository"></a>本地创建版本库 Create a Repository</h2><p>新建一个空文件夹，在该路径下打开bash并输入命令<code>$ git init</code>，将生成一个.git隐藏文件。</p>
-<h2 id="add-amp-commit"><a href="#add-amp-commit" class="headerlink" title="add&amp;commit"></a>add&amp;commit</h2><p><code>$ git add &lt;file&gt;</code><br><code>$ git commit -m &quot;message&quot;</code></p>
-<h2 id="上传本地版本库到远程"><a href="#上传本地版本库到远程" class="headerlink" title="上传本地版本库到远程"></a>上传本地版本库到远程</h2><p><code>$ git push -u origin master</code></p>
-<h2 id="克隆远程版本库到本地"><a href="#克隆远程版本库到本地" class="headerlink" title="克隆远程版本库到本地"></a>克隆远程版本库到本地</h2><p><code>$git clone &lt;URL&gt;</code></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/待分类/">待分类</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo-build" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/11/07/hexo-build/" class="article-date">
-      <time datetime="2018-11-07T02:05:22.000Z" itemprop="datePublished">2018-11-07</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/07/hexo-build/">hexo+github个人博客部署</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="1-创建过程（windows系统）"><a href="#1-创建过程（windows系统）" class="headerlink" title="1. 创建过程（windows系统）"></a>1. 创建过程（windows系统）</h2><h3 id="前置环境及条件"><a href="#前置环境及条件" class="headerlink" title="前置环境及条件"></a>前置环境及条件</h3><ol>
-<li>git</li>
-<li>github账号（已经创建了ssh密钥对并配置完成）</li>
-<li>Node.js</li>
-</ol>
-<h3 id="github部署"><a href="#github部署" class="headerlink" title="github部署"></a>github部署</h3><ol>
-<li>在github创建新仓库，取名为<strong>xxx.github.io</strong>，其中<strong>xxx</strong>是自己决定的名字，<br> 之后<strong>xxx.github.io</strong>将成为访问个人博客的域名</li>
-</ol>
-<h3 id="hexo下载初始化"><a href="#hexo下载初始化" class="headerlink" title="hexo下载初始化"></a>hexo下载初始化</h3><p>hexo是基于markdown的个人博客框架，使用者编写markdown文章，hexo将自动生成html静态网页文件以及相应的css,js等文件。</p>
-<ol>
-<li>在命令提示符输入<code>npm install hexo-cli -g</code>并回车（注意：Node.js配置失败将不能使用<code>npm</code>命令），接着等待hexo下载完成</li>
-<li>进入想要放置博客项目的位置下，输入<code>hexo init xxx</code>并回车，其中<strong>xxx</strong>为博客项目名称；也可以创建好项目空文件夹，进入<br> 直接输入<code>hexo init</code></li>
-<li>在博客项目的位置下打开命令提示符，输入<code>hexo server</code>运行服务器。在浏览器输入地址<strong>localhost:4000</strong>，如果浏览器显示成功则hexo初始化成功</li>
-</ol>
-<h3 id="hexo创建博客"><a href="#hexo创建博客" class="headerlink" title="hexo创建博客"></a>hexo创建博客</h3><p>如初始化过程中所说创建好博客项目，将看到自动创建好的目录结构，其中source和themes是使用者（对于我这种小白来说）最常用的两个文件夹。<br>source存放博客文章markdown文件以及图片视频等网页资源；themes为博客主题，可以简单理解为外观，目前版本初始化的主题为landscape</p>
-<ol>
-<li><p>首先需要修改的是博客项目根目录下的<strong>_config.yml</strong>文件，主要修改三个地方：</p>
-<ol>
-<li><p>网页基本信息</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: xxx</span><br><span class="line">subtitle:</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">author: xxx</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: Asia/Shanghai</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>网页地址</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</span><br><span class="line">url: http://xxx.github.io</span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>github连接</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/xxx/xxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>其中repo为github上博客项目的位置，比如<a href="https://github.com/lotuny/lotuny.github.io.git就是我项目的位置。" target="_blank" rel="noopener">https://github.com/lotuny/lotuny.github.io.git就是我项目的位置。</a></p>
-</li>
-</ol>
-</li>
-<li><p>设置喜欢的主题</p>
-<ol>
-<li>寻找主题<br><br> <a href="https://hexo.io/themes/index.html可以查找，但是这些主题貌似都是非官方设计的，" target="_blank" rel="noopener">https://hexo.io/themes/index.html可以查找，但是这些主题貌似都是非官方设计的，</a><br> 所以该网页不直接提供下载链接，只提供演示链接；两种方法，一种在演示博客中找到github项目的链接；另一种直接在<br> github搜索主题名字，一般主题项目名称为<strong>hexo-theme-xxx</strong>的格式。</li>
-<li><p>下载配置主题<br><br> 将github上对应主题项目克隆到本地项目下themes文件夹中，修改主题项目的名称，比如这里使用的是<strong>hexo-theme-Mic_Theme</strong>，<br> 改名为<strong>miccall</strong>，修改博客项目根目录下<strong>_config.yml</strong>：</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: miccall</span><br></pre></td></tr></table></figure>
-<p> 接着就可以通过修改主题文件夹下<strong>_config.yml</strong>等文件进行个性化设置了，具体操作因不同<br> 的主题而异，设置规范以主题项目说明为准，一般会放在readme.md中。</p>
-</li>
-</ol>
-</li>
-<li><p>生成博客并上传github<br> hexo自动生成静态网页，提供了几个方便的命令。<br><br> <code>hexo server</code>在本地运行服务器确认博客效果。<br><br> <code>hexo generate</code>生成静态网页并建好网站项目。<br><br> <code>hexo deploy</code>将博客项目推到github。<br><br> <strong>tips:</strong> generate一定要在deploy之前完成，因为本地博客项目和github博客项目的文件结构是不一样的，deploy是将generate出来的文件<br> 存放在根目录下public文件夹中，然后将public的所有文件push到github</p>
-</li>
-</ol>
-<h2 id="2-常见问题"><a href="#2-常见问题" class="headerlink" title="2. 常见问题"></a>2. 常见问题</h2><p>问题常不常见我是不知道，但都是我遇到的问题，并且有一些还待解决……</p>
-<ol>
-<li>路径映射问题。</li>
-<li>markdown有序列表：为啥我IDE预览和网页浏览的效果不一样！</li>
-</ol>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/待分类/">待分类</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-python-learning" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/11/06/python-learning/" class="article-date">
-      <time datetime="2018-11-06T13:08:22.000Z" itemprop="datePublished">2018-11-06</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/06/python-learning/">python-learning</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程语言（programming-language）/">编程语言（programming language）</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-  
-</div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                <i class="fa fa-copyright"></i> 
-                2018 Lotuny
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
-            </div>
-        </div>
-        
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style="display:none">
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>| </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style="display:none">
-                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
-        
-    </div>
-</footer>
-    </div>
-    
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 5;
-                var backgroundimg = "url(https://lotuny.github.io/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
     </script>
 
-
-
-
-
-<div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
-</div>
-<script>
-    // Open in New Window
-    
-        var oOpenInNew = {
-            
-            
-            
-            
-            
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
         }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
-    
-</script>
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
 
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-  </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in overlay">
+        <!-- Intro 头部显示 s -->
+                <div id="intro">
+            <h1>This is<br>
+                        Lotuny </h1>
+            <p> It's the choices that make us who we are
+            </p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Lotuny</a>
+</header>
+        <!-- Header 头部logo end -->
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">归档</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="archive-link" href="/archives/2018/11/">十一月 2018</a>
+	                    </li></ul>
+	        </li>
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/lotuny" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+        <!-- Nav 导航条 end -->
+        <!-- Main 主要部分 start -->
+        
+        <!-- Main-first -->
+                    <div id="main">
+            <!-- Main first s-->
+            <article id="me" class="panel">
+                <header style="color: #000000">
+                    <h1>Lotuny</h1>
+                    <p>Nothing special.</p>
+                </header>
+                <a href="" class="jumplink pic">
+                    <span class="arrow icon fa-chevron-right"><span></span></span>
+                    <img src="/images/me.jpg" alt="">
+                </a>
+            </article>
+            <!-- Main first e-->
+        </div>
+
+        
+        <!-- 文章列表   s -->
+        <div id="main" style="background-color: transparent; padding:0;">
+        <section class="link_container" style="margin-top: 0; background-color: transparent; ">
+            <div class="link_row">
+                <!-- 文章sample  s-->
+
+                
+                <div class="6u 12u(narrower)">
+                    <section class="link_box special">
+                       <a href="/2018/11/08/ctf-learning/">
+                        <div class="page_title" style="background-image: url(https://lotuny.github.io/images/ctf.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
+                            <!--标题-->
+                            <h2 class="page_title_text"> ctf学习 </h2>
+                            <!--段落-->
+                        </div>
+                        </a>
+                        <div class="home-post-info">
+                            <!-- Author Avatar -->
+                            <div class="home-post-info-author-avatar">
+                                <h6><span class="home-post-info-data">2018-11-08</span></h6>
+                                <div class="home-post-info-Category">
+                                    <!-- Category -->
+                                    <span>
+                            <h6>
+                            <a class="post_category-link" href="http://localhost:4000/categories/Algorithm/">
+                                </a>
+                            </h6>
+                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- 文章sample  e-->
+            
+                <div class="6u 12u(narrower)">
+                    <section class="link_box special">
+                       <a href="/2018/11/08/git-learning/">
+                        <div class="page_title" style="background-image: url(https://lotuny.github.io/images/git.png);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
+                            <!--标题-->
+                            <h2 class="page_title_text"> git常用命令 </h2>
+                            <!--段落-->
+                        </div>
+                        </a>
+                        <div class="home-post-info">
+                            <!-- Author Avatar -->
+                            <div class="home-post-info-author-avatar">
+                                <h6><span class="home-post-info-data">2018-11-08</span></h6>
+                                <div class="home-post-info-Category">
+                                    <!-- Category -->
+                                    <span>
+                            <h6>
+                            <a class="post_category-link" href="http://localhost:4000/categories/Algorithm/">
+                                </a>
+                            </h6>
+                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- 文章sample  e-->
+            
+                <div class="6u 12u(narrower)">
+                    <section class="link_box special">
+                       <a href="/2018/11/07/hexo-build/">
+                        <div class="page_title" style="background-image: url(https://lotuny.github.io/images/hexo+github.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
+                            <!--标题-->
+                            <h2 class="page_title_text"> hexo+github个人博客部署 </h2>
+                            <!--段落-->
+                        </div>
+                        </a>
+                        <div class="home-post-info">
+                            <!-- Author Avatar -->
+                            <div class="home-post-info-author-avatar">
+                                <h6><span class="home-post-info-data">2018-11-07</span></h6>
+                                <div class="home-post-info-Category">
+                                    <!-- Category -->
+                                    <span>
+                            <h6>
+                            <a class="post_category-link" href="http://localhost:4000/categories/Algorithm/">
+                                </a>
+                            </h6>
+                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- 文章sample  e-->
+            
+                <div class="6u 12u(narrower)">
+                    <section class="link_box special">
+                       <a href="/2018/11/06/python-learning/">
+                        <div class="page_title" style="background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
+                            <!--标题-->
+                            <h2 class="page_title_text"> python-learning </h2>
+                            <!--段落-->
+                        </div>
+                        </a>
+                        <div class="home-post-info">
+                            <!-- Author Avatar -->
+                            <div class="home-post-info-author-avatar">
+                                <h6><span class="home-post-info-data">2018-11-06</span></h6>
+                                <div class="home-post-info-Category">
+                                    <!-- Category -->
+                                    <span>
+                            <h6>
+                            <a class="post_category-link" href="http://localhost:4000/categories/Algorithm/">
+                                </a>
+                            </h6>
+                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- 文章sample  e-->
+            
+            </div>
+        </section>
+        </div>
+        <!-- 文章列表   end -->
+        <!-- Main 主要部分 end -->
+        <!-- footer  页码 start-->
+        <footer style="text-align: center; padding-top: 2em;">
+  
+</footer>
+
+        <!-- footer  页码 end-->
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+        <!-- Copyright 版权 end -->
+    </div>
+    <!-- Wrapper 外包 e-->
+    <!-- Scripts -->
 </body>
+
+ 	
 </html>
